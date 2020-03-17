@@ -239,14 +239,14 @@ Link: [Naver](https://www.naver.com, "naver link")
 * 자동연결   
 ex)
 
-* 외부링크: <https://www.naver.com/>
-* 이메일링크: <kangtak6291@naver.com>
+외부링크: <https://www.naver.com/>
+이메일링크: <kangtak6291@naver.com>
 
 ```
 일반적인 URL 혹은 이메일주소인 경우 적절한 형식으로 링크를 형성한다.
 
-* 외부링크: <https://www.naver.com/>
-* 이메일링크: <kangtak6291@naver.com>
+외부링크: <https://www.naver.com/>
+이메일링크: <kangtak6291@naver.com>
 ```
 ## 2.8. 이미지
 앞에 !와 [대체텍스트]를 붙인다.   
@@ -255,7 +255,7 @@ ex)
 ```
 ![토토로](http://blog.jinbo.net/attach/615/200937431.jpg)
 ```
-사이즈 조절 기능은 없기 때문에 <img width="" height=""></img>를 이용한다.   
+사이즈 조절 기능은 없기 때문에 ```<img width="" height=""></img>```를 이용한다.   
 ex)
 <img src="http://blog.jinbo.net/attach/615/200937431.jpg" width="450px" height="300px"></img>
 ```
@@ -269,4 +269,32 @@ ex) [![갈매기](http://www.futurekorea.co.kr/news/photo/200604/12476_8716_5000.JP
 ```
 
 ## 2.9. 줄바꿈
-3칸 이상 띄어쓰기를 하면 줄이 바뀐다.
+3칸 이상 띄어쓰기를 하면 줄이 바뀐다.   
+ex)
+* 줄 바꿈을 하려면 줄 바꿈을 하고 싶은 위치에서    3칸이상을 띄어쓰기해야 한다.
+```
+* 줄 바꿈을 하려면 줄 바꿈을 하고 싶은 위치에서    3칸이상을 띄어쓰기해야 한다.
+```
+
+## 2.10. 테이블
+헤더 셀을 구분할 때 3개 이상의 -(hyphen/dash) 기호를 쓴다.
+헤더 셀을 구분하면서 :(Colons) 기호로 셀(열/칸) 안에 내용을 정렬할 수 있다.
+가장 좌측과 가장 우측에 있는 |(vertical bar) 기호는 생략 가능하다.   
+ex)
+| 학번 | 이름 | 전화번호 |
+|---|:---:|---:|
+| `2012104089` | 트와이스 | `01012341234` |
+| `2015104029` | 아이즈원 | '01011112222' |
+| `2019105029` | 소녀시대 | '01033334444' |
+
+```
+ 학번 | 이름 | 전화번호 
+---|:---:|---:
+ `2012104089` | 트와이스 | `01012341234` 
+ `2015104029` | 아이즈원 | '01011112222' 
+ `2019105029` | 소녀시대 | '01033334444' 
+```
+# 3. 참고문서
+* https://gist.github.com/ihoneymon/652be052a0727ad59601
+* https://velog.io/@bboding/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4MarkDown-%EC%82%AC%EC%9A%A9%EB%B2%95
+* https://ko.wikipedia.org/wiki/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4
